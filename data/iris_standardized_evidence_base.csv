@@ -1,0 +1,180 @@
+Estudo,Domínio,Tarefa,Aspecto de Qualidade,Objetivo da Avaliação,Nível de Automação,Risco,Métodos/Métricas,Família de Método/Métrica
+A1,Computação,Codificação,Similaridade,Avaliação de Qualidade,Auto,Baixo Risco,"BLEU, CodeBLEU, Levenshtein Distance",Referencial
+A2,Saúde,Sistemas Especializados,Factualidade,Validação de Métodos de Avaliação,Auto,Alto Risco,"Precision, Recall, F1-Score",Gabaritada
+A2,Saúde,Sistemas Especializados,Factualidade,Validação de Métodos de Avaliação,Humano,Alto Risco,SaferDx,Humana
+A2,Saúde,Sistemas Especializados,Completude,Validação de Métodos de Avaliação,Humano,Alto Risco,SaferDx,Humana
+A2,Saúde,Sistemas Especializados,Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,"ROUGE-L, CUI F1-Score, UMLS Scorer, SapBERT Score","Estruturada, Gabaritada, Referencial, Semântica"
+A3,Saúde,Sumarização,Similaridade,Comparação de Modelos,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-L",Referencial
+A3,Saúde,Sumarização,Completude,Comparação de Modelos,Auto,Alto Risco,"ROUGE-1, ROUGE-L",Referencial
+A4,Conhecimento Aberto,Resposta a perguntas (QA),Factualidade,Avaliação de Qualidade,Híbrido,Baixo Risco,"Keywords, Blacklist, LLM-as-a-Judge, Especialistas","Estruturada, Humana, LLM-Judge"
+A5,Conhecimento Aberto,Conversação,Utilidade,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A5,Conhecimento Aberto,Conversação,Completude,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A6,Conhecimento Aberto,Sumarização,Factualidade,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,NER-overlap,Estruturada
+A6,Conhecimento Aberto,Sumarização,Fluência,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"Flesch Reading Ease, MTLD, Random Forest","Aprendida, Linguística"
+A7,Conhecimento Aberto,Codificação,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Sumarização,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Resposta a perguntas (QA),Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Tradução,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Resolução de Problemas,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Transformação de Dados,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Extração de Informações,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A7,Conhecimento Aberto,Classificação e Decisão,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A8,Conhecimento Aberto,Transformação de Dados,Similaridade,Avaliação de Qualidade,Auto,Baixo Risco,"BLEU, BLEURT","Referencial, Semântica"
+A8,Conhecimento Aberto,Transformação de Dados,Factualidade,Avaliação de Qualidade,Híbrido,Baixo Risco,"PARENT, Especialistas","Estruturada, Humana"
+A8,Conhecimento Aberto,Transformação de Dados,Fluência,Avaliação de Qualidade,Humano,Baixo Risco,Especialistas,Humana
+A9,Saúde,Conversação,Relevância,Avaliação de Qualidade,Auto,Alto Risco,"Precision, Recall, F1-Score",Gabaritada
+A9,Saúde,Conversação,Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BLEU, ROUGE-1, ROUGE-2, ROUGE-L, BERTScore","Referencial, Semântica"
+A9,Saúde,Conversação,Factualidade,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A9,Saúde,Conversação,Coerência,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A10,Saúde,Visão-Linguagem (Multimodal),Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BLEU, ROUGE-L, BERTScore","Referencial, Semântica"
+A10,Saúde,Visão-Linguagem (Multimodal),Factualidade,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A10,Saúde,Visão-Linguagem (Multimodal),Relevância,Avaliação de Qualidade,Auto,Alto Risco,LLM-as-a-Judge,LLM-Judge
+A11,Segurança,Robustez e Red Teaming,Confiabilidade,Análise de Robustez e Segurança,Auto,Alto Risco,"LLM-as-a-Judge, ASR, Coarse-grained Evaluation (CE)","LLM-Judge, Segurança"
+A11,Segurança,Robustez e Red Teaming,Similaridade,Análise de Robustez e Segurança,Auto,Alto Risco,BERT Similarity,Semântica
+A12,Política,Tradução,Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,BLEU,Referencial
+A12,Política,Tradução,Fluência,Validação de Métodos de Avaliação,Auto,Alto Risco,MDD + CP/T,Linguística
+A12,Saúde,Tradução,Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,BLEU,Referencial
+A12,Saúde,Tradução,Fluência,Validação de Métodos de Avaliação,Auto,Alto Risco,MDD + CP/T,Linguística
+A12,Jurídico,Tradução,Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,BLEU,Referencial
+A12,Jurídico,Tradução,Fluência,Validação de Métodos de Avaliação,Auto,Alto Risco,MDD + CP/T,Linguística
+A13,Saúde,Sistemas Especializados,Factualidade,Validação de Métodos de Avaliação,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A13,Saúde,Sistemas Especializados,Confiabilidade,Validação de Métodos de Avaliação,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A13,Saúde,Sistemas Especializados,Relevância,Validação de Métodos de Avaliação,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A13,Saúde,Sistemas Especializados,Utilidade,Validação de Métodos de Avaliação,Humano,Alto Risco,Especialistas,Humana
+A14,Saúde,Resposta a perguntas (QA),Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BLEU, ROUGE-L, BERTScore, Meteor","Referencial, Semântica"
+A14,Saúde,Resposta a perguntas (QA),Confiabilidade,Avaliação de Qualidade,Humano,Alto Risco,Especialistas,Humana
+A14,Saúde,Conversação,Relevância,Avaliação de Qualidade,Humano,Alto Risco,Avaliação Humana (Likert),Humana
+A14,Saúde,Conversação,Factualidade,Avaliação de Qualidade,Humano,Alto Risco,Avaliação Humana (Likert),Humana
+A14,Saúde,Conversação,Fluência,Avaliação de Qualidade,Humano,Alto Risco,Avaliação Humana (Likert),Humana
+A14,Saúde,Conversação,Utilidade,Avaliação de Qualidade,Humano,Alto Risco,Avaliação Humana (Likert),Humana
+A15,Computação,Resolução de Problemas,Utilidade,Avaliação de Qualidade,Auto,Baixo Risco,Forward Simulatability Variation (FSV),Funcional
+A16,Saúde,Sumarização,Similaridade,Comparação de Modelos,Auto,Alto Risco,"ROUGE-1, ROUGE-2, BERTScore","Referencial, Semântica"
+A16,Saúde,Sumarização,Fluência,Comparação de Modelos,Auto,Alto Risco,ROUGE-L,Referencial
+A16,Saúde,Sumarização,Factualidade,Comparação de Modelos,Humano,Alto Risco,Análise Qualitativa Manual,Humana
+A16,Saúde,Sumarização,Completude,Comparação de Modelos,Humano,Alto Risco,Análise Qualitativa Manual,Humana
+A17,Política,Tradução,Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,"BLEU, BERTScore","Referencial, Semântica"
+A17,Política,Tradução,Fluência,Validação de Métodos de Avaliação,Auto,Alto Risco,chrF++,Referencial
+A18,Computação,Resposta a perguntas (QA),Factualidade,Seleção de Modelos,Híbrido,Alto Risco,"F1-Score, Especialistas","Gabaritada, Humana"
+A18,Computação,Resposta a perguntas (QA),Fluência,Seleção de Modelos,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A18,Computação,Resposta a perguntas (QA),Confiabilidade,Seleção de Modelos,Híbrido,Alto Risco,"ROUGE-Recall, Especialistas","Gabaritada, Humana, Referencial"
+A18,Computação,Resolução de Problemas,Factualidade,Seleção de Modelos,Híbrido,Alto Risco,"F1-Score, Especialistas","Gabaritada, Humana"
+A18,Computação,Resolução de Problemas,Fluência,Seleção de Modelos,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A18,Computação,Resolução de Problemas,Confiabilidade,Seleção de Modelos,Híbrido,Alto Risco,"ROUGE-Recall, Especialistas","Gabaritada, Humana, Referencial"
+A18,Computação,Sistemas Especializados,Factualidade,Seleção de Modelos,Híbrido,Alto Risco,"F1-Score, Especialistas","Gabaritada, Humana"
+A18,Computação,Sistemas Especializados,Fluência,Seleção de Modelos,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A18,Computação,Sistemas Especializados,Confiabilidade,Seleção de Modelos,Híbrido,Alto Risco,"ROUGE-Recall, Especialistas","Gabaritada, Humana, Referencial"
+A18,Computação,Codificação,Factualidade,Seleção de Modelos,Híbrido,Alto Risco,"F1-Score, Especialistas","Gabaritada, Humana"
+A18,Computação,Codificação,Fluência,Seleção de Modelos,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A18,Computação,Codificação,Confiabilidade,Seleção de Modelos,Híbrido,Alto Risco,"ROUGE-Recall, Especialistas","Gabaritada, Humana, Referencial"
+A19,Saúde,Sumarização,Similaridade,Comparação de Modelos,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-L, BERTScore, BLEU, Meteor","Referencial, Semântica"
+A19,Saúde,Sumarização,Completude,Comparação de Modelos,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-Recall, ROUGE-L, Meteor","Gabaritada, Referencial"
+A19,Saúde,Sumarização,Fluência,Comparação de Modelos,Auto,Alto Risco,Meteor,Referencial
+A20,Saúde,Sumarização,Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-L, ROUGE-L-SUM",Referencial
+A20,Saúde,Sumarização,Coerência,Avaliação de Qualidade,Híbrido,Alto Risco,"UniEval, Especialistas","Aprendida, Humana"
+A20,Saúde,Sumarização,Factualidade,Avaliação de Qualidade,Híbrido,Alto Risco,"UniEval, Especialistas","Aprendida, Humana"
+A20,Saúde,Sumarização,Fluência,Avaliação de Qualidade,Híbrido,Alto Risco,"UniEval, Especialistas","Aprendida, Humana"
+A20,Saúde,Sumarização,Relevância,Avaliação de Qualidade,Híbrido,Alto Risco,"UniEval, Especialistas","Aprendida, Humana"
+A20,Saúde,Sumarização,Utilidade,Avaliação de Qualidade,Humano,Alto Risco,Especialistas,Humana
+A21,Computação,Transformação de Dados,Similaridade,Comparação de Modelos,Auto,Alto Risco,"BERTScore, SBERT, USE, HSSM",Semântica
+A21,Computação,Transformação de Dados,Coerência,Comparação de Modelos,Auto,Alto Risco,HSSM,Semântica
+A22,Saúde,Resposta a perguntas (QA),Factualidade,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A22,Saúde,Resposta a perguntas (QA),Coerência,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A22,Saúde,Resposta a perguntas (QA),Completude,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A22,Saúde,Resposta a perguntas (QA),Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"ROUGE-L, BLEU, Meteor, BERTScore","Referencial, Semântica"
+A22,Saúde,Resposta a perguntas (QA),Confiabilidade,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A22,Saúde,Resposta a perguntas (QA),Utilidade,Avaliação de Qualidade,Híbrido,Alto Risco,"LLM-as-a-Judge, Especialistas","LLM-Judge, Humana"
+A23,Conhecimento Aberto,Resposta a perguntas (QA),Factualidade,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,Multi-hop Accuracy,Gabaritada
+A23,Conhecimento Aberto,Resposta a perguntas (QA),Raciocínio,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Entity Persistence Error, Entity Mismatch Error","LLM-Judge, Diagnóstica"
+A23,Conhecimento Aberto,Resposta a perguntas (QA),Confiabilidade,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Entity Distortion Error","LLM-Judge, Diagnóstica"
+A24,Engenharia,Resposta a perguntas (QA),Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BERTScore, Cosine Similarity, ROUGE-L","Referencial, Semântica"
+A24,Engenharia,Transformação de Dados,Factualidade,Avaliação de Qualidade,Auto,Alto Risco,Execution Accuracy (EX),Funcional
+A24,Engenharia,Sumarização,Fluência,Avaliação de Qualidade,Auto,Alto Risco,LLM-as-a-Judge,LLM-Judge
+A24,Engenharia,Sumarização,Relevância,Avaliação de Qualidade,Auto,Alto Risco,LLM-as-a-Judge,LLM-Judge
+A24,Engenharia,Sumarização,Completude,Avaliação de Qualidade,Auto,Alto Risco,"Rate_fill, N_cover",Estruturada
+A24,Engenharia,Sumarização,Factualidade,Avaliação de Qualidade,Auto,Alto Risco,Rate_acc,Gabaritada
+A25,Negócios,Resposta a perguntas (QA),Similaridade,Avaliação de Viabilidade,Auto,Alto Risco,"BERTScore, Meteor","Referencial, Semântica"
+A25,Negócios,Sumarização,Similaridade,Avaliação de Viabilidade,Auto,Alto Risco,"BERTScore, Meteor","Referencial, Semântica"
+A26,Saúde,Resposta a perguntas (QA),Factualidade,Validação de Métodos de Avaliação,Auto,Alto Risco,LLM-as-a-Judge,LLM-Judge
+A26,Saúde,Resposta a perguntas (QA),Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,"Levenshtein Distance, ROUGE Score",Referencial
+A26,Saúde,Resposta a perguntas (QA),Utilidade,Validação de Métodos de Avaliação,Humano,Alto Risco,Especialistas,Humana
+A27,Saúde,Sumarização,Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-L",Referencial
+A27,Saúde,Resposta a perguntas (QA),Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BLEU-1, BLEU-4",Referencial
+A27,Saúde,Resposta a perguntas (QA),Coerência,Avaliação de Qualidade,Humano,Alto Risco,Especialistas,Humana
+A27,Saúde,Resposta a perguntas (QA),Factualidade,Avaliação de Qualidade,Humano,Alto Risco,Especialistas,Humana
+A27,Saúde,Resposta a perguntas (QA),Utilidade,Avaliação de Qualidade,Humano,Alto Risco,Especialistas,Humana
+A28,Saúde,Resposta a perguntas (QA),Factualidade,Comparação de Modelos,Humano,Alto Risco,Especialistas,Humana
+A28,Saúde,Resposta a perguntas (QA),Utilidade,Comparação de Modelos,Humano,Alto Risco,Especialistas,Humana
+A28,Saúde,Resposta a perguntas (QA),Similaridade,Comparação de Modelos,Auto,Alto Risco,"USE, Cosine Similarity, ROUGE-L","Referencial, Semântica"
+A28,Saúde,Resposta a perguntas (QA),Fluência,Comparação de Modelos,Auto,Alto Risco,"FKRE, FKGL",Linguística
+A29,Computação,Transformação de Dados,Factualidade,Avaliação de Qualidade,Auto,Alto Risco,Average Execution Accuracy,Funcional
+A29,Computação,Transformação de Dados,Raciocínio,Avaliação de Qualidade,Auto,Alto Risco,Categorized Error Analysis (T5 – Query Logic),Diagnóstica
+A30,Saúde,Sumarização,Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"ROUGE-1, ROUGE-2, ROUGE-L, Cosine Similarity, ROUGE-3","Referencial, Semântica"
+A30,Saúde,Sumarização,Utilidade,Avaliação de Qualidade,Auto,Alto Risco,ICD-9 Downstream Classification (LAAT),Extrínseca
+A31,Saúde,Sumarização,Similaridade,Avaliação de Viabilidade,Auto,Alto Risco,"BLEU, ROUGE-L, BERTScore","Referencial, Semântica"
+A31,Saúde,Sumarização,Completude,Avaliação de Viabilidade,Humano,Alto Risco,Especialistas,Humana
+A31,Saúde,Sumarização,Factualidade,Avaliação de Viabilidade,Humano,Alto Risco,Especialistas,Humana
+A31,Saúde,Sumarização,Fluência,Avaliação de Viabilidade,Humano,Alto Risco,Especialistas,Humana
+A32,Engenharia,Controle e Sistemas Físicos,Factualidade,Avaliação de Qualidade,Auto,Alto Risco,"Decision Accuracy, Precision, Recall, F1-Score",Gabaritada
+A32,Engenharia,Controle e Sistemas Físicos,Similaridade,Avaliação de Qualidade,Híbrido,Alto Risco,"BLEU, Especialistas","Humana, Referencial"
+A33,Conhecimento Aberto,Resposta a perguntas (QA),Relevância,Validação de Métodos de Avaliação,Auto,Baixo Risco,"LLM-as-a-Judge, BERTScore, BLEU, ROUGE-L, Meteor, KPQA, LERC, BERT STS-B, CIDEr","Aprendida, Referencial, LLM-Judge, Semântica"
+A33,Conhecimento Aberto,Resposta a perguntas (QA),Factualidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"LLM-as-a-Judge, BERTScore","LLM-Judge, Semântica"
+A33,Conhecimento Aberto,Resposta a perguntas (QA),Similaridade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"LLM-as-a-Judge, LERC, BERT STS-B, BERTScore, BLEU-1, ROUGE-L, Meteor","Aprendida, LLM-Judge, Referencial, Semântica"
+A34,Educação,Avaliação e Feedback,Utilidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A34,Educação,Avaliação e Feedback,Relevância,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A34,Educação,Avaliação e Feedback,Coerência,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A34,Educação,Avaliação e Feedback,Factualidade,Seleção de Modelos,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A35,Conhecimento Aberto,Resposta a perguntas (QA),Factualidade,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Conhecimento Aberto,Resposta a perguntas (QA),Completude,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Conhecimento Aberto,Resposta a perguntas (QA),Utilidade,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Conhecimento Aberto,Resolução de Problemas,Factualidade,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Conhecimento Aberto,Resolução de Problemas,Raciocínio,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Conhecimento Aberto,Escrita/Geração de Texto,Criatividade,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A35,Computação,Codificação,Factualidade,Validação de Métodos de Avaliação,Humano,Baixo Risco,Avaliação Humana Pareada (3-AFC),Humana
+A36,Conhecimento Aberto,Sumarização,Similaridade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"Semantic-Eval, BLEU, ROUGE-1, ROUGE-2, ROUGE-L, Meteor, SBERT, BERTScore, LLM-as-a-Judge","Aprendida, LLM-Judge, Referencial, Semântica"
+A36,Saúde,Resposta a perguntas (QA),Similaridade,Validação de Métodos de Avaliação,Auto,Alto Risco,"Semantic-Eval, BLEU, ROUGE-1, ROUGE-2, ROUGE-L, Meteor, SBERT, BERTScore, LLM-as-a-Judge","Aprendida, LLM-Judge, Referencial, Semântica"
+A36,Conhecimento Aberto,Classificação e Decisão,Similaridade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"Semantic-Eval, BLEU, ROUGE-1, ROUGE-2, ROUGE-L, Meteor, SBERT, BERTScore, LLM-as-a-Judge","Aprendida, LLM-Judge, Referencial, Semântica"
+A37,Saúde,Extração de Informações,Factualidade,Validação de Métodos de Avaliação,Auto,Alto Risco,"LLM-as-a-Judge, Precision, Recall, F1-Score","LLM-Judge, Gabaritada"
+A38,Conhecimento Aberto,Classificação e Decisão,Confiabilidade,Análise de Robustez e Segurança,Auto,Baixo Risco,Pseudo-Log-Likelihood (PLL),Segurança
+A38,Conhecimento Aberto,Extração de Informações,Confiabilidade,Análise de Robustez e Segurança,Auto,Baixo Risco,WinoBias Accuracy Difference,Segurança
+A39,Conhecimento Aberto,Classificação e Decisão,Factualidade,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Grade",LLM-Judge
+A39,Conhecimento Aberto,Classificação e Decisão,Raciocínio,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Grade",LLM-Judge
+A39,Conhecimento Aberto,Classificação e Decisão,Relevância,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Grade",LLM-Judge
+A39,Conhecimento Aberto,Classificação e Decisão,Completude,Análise e Diagnóstico do Comportamento,Auto,Baixo Risco,"LLM-as-a-Judge, Grade",LLM-Judge
+A40,Conhecimento Aberto,Visão-Linguagem (Multimodal),Factualidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,Avaliação Pareada por MLLM Revisor (S_Correct),LLM-Judge
+A40,Conhecimento Aberto,Visão-Linguagem (Multimodal),Raciocínio,Validação de Métodos de Avaliação,Auto,Baixo Risco,Avaliação Multidimensional por MLLM Revisor (S_Visual),LLM-Judge
+A40,Conhecimento Aberto,Visão-Linguagem (Multimodal),Similaridade,Validação de Métodos de Avaliação,Auto,Baixo Risco,CLIP Score (S_Clip),Semântica
+A41,Educação,Avaliação e Feedback,Factualidade,Avaliação de Viabilidade,Humano,Baixo Risco,"Especialistas, Percentage of Correct LLM Responses, Análise de Falsos Positivos/Negativos","Diagnóstica, Gabaritada, Humana"
+A41,Educação,Visão-Linguagem (Multimodal),Factualidade,Avaliação de Viabilidade,Humano,Baixo Risco,"Avaliação Humana Qualitativa, Comparação com Entrada e Referência",Humana
+A41,Educação,Resolução de Problemas,Factualidade,Avaliação de Viabilidade,Humano,Baixo Risco,Verificação Humana da Correção do Resultado,Humana
+A41,Educação,Resolução de Problemas,Raciocínio,Avaliação de Viabilidade,Humano,Baixo Risco,Verificação Humana dos Passos e Método de Resolução,Humana
+A42,Negócios,Transformação de Dados,Factualidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A42,Negócios,Transformação de Dados,Completude,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A42,Negócios,Transformação de Dados,Relevância,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge,LLM-Judge
+A43,Engenharia,Sistemas Especializados,Similaridade,Avaliação de Qualidade,Auto,Alto Risco,"BLEU, SEMANTICSim, BERTScore","Referencial, Semântica"
+A43,Engenharia,Sistemas Especializados,Coerência,Avaliação de Qualidade,Auto,Alto Risco,"ROUGE-L, Robustness Score (RS)","Referencial, Comportamental"
+A43,Engenharia,Sistemas Especializados,Completude,Avaliação de Qualidade,Auto,Alto Risco,"Hazard Recall (HR), Compliance Recall (CR)","Gabaritada, Segurança"
+A43,Engenharia,Sistemas Especializados,Factualidade,Avaliação de Qualidade,Auto,Alto Risco,Compliance Precision (CP),"Gabaritada, Segurança"
+A43,Engenharia,Sistemas Especializados,Factualidade,Avaliação de Qualidade,Humano,Alto Risco,"Standard Alignment Score (SAS), Expert Ratings","Humana, Segurança"
+A43,Engenharia,Sistemas Especializados,Confiabilidade,Avaliação de Qualidade,Auto,Alto Risco,Safety Violation Rate (SVR),Segurança
+A44,Computação,Codificação,Factualidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,Computational Accuracy (CA),Funcional
+A44,Computação,Codificação,Similaridade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"BLEU, CrystalBLEU, CodeBLEU",Referencial
+A44,Computação,Codificação,Utilidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"Match Success Rate (MSR), Code Extraction Success Rate (CSR)",Funcional
+A45,Saúde,Resposta a perguntas (QA),Factualidade,Análise de Robustez e Segurança,Auto,Alto Risco,Accuracy — Standard MCQ,Gabaritada
+A45,Saúde,Resposta a perguntas (QA),Confiabilidade,Análise de Robustez e Segurança,Auto,Alto Risco,Accuracy — Wrong Options Test (WOT),Segurança
+A45,Saúde,Resposta a perguntas (QA),Confiabilidade,Análise de Robustez e Segurança,Auto,Alto Risco,Accuracy — Misleading Guidance Test (MGT),Segurança
+A45,Saúde,Resposta a perguntas (QA),Confiabilidade,Análise de Robustez e Segurança,Auto,Alto Risco,Accuracy — Fabricated Entity Test (FET),Segurança
+A46,Negócios,Resposta a perguntas (QA),Coerência,Seleção de Modelos,Auto,Alto Risco,"Variability Score (Graph Edit Distance — GED), Pairwise Cosine Similarity","Comportamental, Semântica"
+A46,Negócios,Resposta a perguntas (QA),Confiança,Seleção de Modelos,Auto,Alto Risco,Confidence Score (ConScore),Comportamental
+A46,Negócios,Resposta a perguntas (QA),Relevância,Seleção de Modelos,Auto,Alto Risco,Entity Overlap Ratio,Estruturada
+A46,Negócios,Resposta a perguntas (QA),Coerência,Seleção de Modelos,Auto,Alto Risco,BERT Next Sentence Prediction,Aprendida
+A46,Negócios,Resposta a perguntas (QA),Factualidade,Seleção de Modelos,Auto,Alto Risco,Entailment Score (T5-small / SNLI),Aprendida
+A46,Negócios,Resposta a perguntas (QA),Similaridade,Seleção de Modelos,Auto,Alto Risco,"BERTScore, BLEU, BLEURT, SacreBLEU, Word Error Rate (WER)","Referencial, Semântica"
+A47,Conhecimento Aberto,Escrita/Geração de Texto,Factualidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge — Functional Fragmentation,LLM-Judge
+A47,Conhecimento Aberto,Escrita/Geração de Texto,Fluência,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge — Functional Fragmentation,LLM-Judge
+A47,Conhecimento Aberto,Escrita/Geração de Texto,Utilidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,LLM-as-a-Judge — Functional Fragmentation,LLM-Judge
+A47,Conhecimento Aberto,Conversação,Utilidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,"LLM-as-a-Judge — Functional Fragmentation, Positive Function Ratio",LLM-Judge
+A47,Conhecimento Aberto,Escrita/Geração de Texto,Criatividade,Validação de Métodos de Avaliação,Híbrido,Baixo Risco,"LLM-as-a-Judge — Functional Fragmentation, Inspeção/Refinamento Humano","Humana, LLM-Judge"
+A47,Conhecimento Aberto,Escrita/Geração de Texto,Coerência,Validação de Métodos de Avaliação,Híbrido,Baixo Risco,"LLM-as-a-Judge — Functional Fragmentation, Inspeção/Refinamento Humano","Humana, LLM-Judge"
+A47,Negócios,Escrita/Geração de Texto,Criatividade,Validação de Métodos de Avaliação,Híbrido,Baixo Risco,"LLM-as-a-Judge — Functional Fragmentation, Inspeção/Refinamento Humano","Humana, LLM-Judge"
+A47,Negócios,Escrita/Geração de Texto,Utilidade,Validação de Métodos de Avaliação,Híbrido,Baixo Risco,"LLM-as-a-Judge — Functional Fragmentation, Inspeção/Refinamento Humano","Humana, LLM-Judge"
+A47,Computação,Sistemas Especializados,Utilidade,Validação de Métodos de Avaliação,Auto,Baixo Risco,Functional Fragmentation,LLM-Judge

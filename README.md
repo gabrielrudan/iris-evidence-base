@@ -6,9 +6,9 @@ This repository contains the evidence base used in the development of the ÍRIS 
 
 The repository contains two main versions of the dataset, corresponding to different stages of the methodological process:
 
-- `data/iris_raw_article_data.xlsx`: initial extraction dataset. Each row corresponds to one primary study and contains the information collected directly from the article, including domain, task, quality aspects, evaluation objectives, automation level, risk, evaluation methods/metrics, and the authors' justification for their use.
+- `data/iris_raw_article_data.csv`: initial extraction dataset. Each row corresponds to one primary study and contains the information collected directly from the article, including domain, task, quality aspects, evaluation objectives, automation level, risk, evaluation methods/metrics, and the authors' justification for their use.
 
-- `data/iris_standardized_evidence_base.xlsx`: standardized evidence base used in the subsequent analyses. In this version, the information extracted from each article was decomposed into individual evidence lines whenever the study reported different relationships between tasks, quality aspects, evaluation strategies, or automation levels. Terminology was also standardized to enable comparison across studies.
+- `data/iris_standardized_evidence_base.csv`: standardized evidence base used in the subsequent analyses. In this version, the information extracted from each article was decomposed into individual evidence lines whenever the study reported different relationships between tasks, quality aspects, evaluation strategies, or automation levels. Terminology was also standardized to enable comparison across studies.
 
 ## Scope
 
